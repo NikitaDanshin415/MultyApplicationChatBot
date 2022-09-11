@@ -37,7 +37,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             update.getMessage().getForwardSenderName();
 
             SendMessage message = new SendMessage(); // Create a message object object
-            message.setChatId("626379691");
+            message.setChatId(chat_id);
             message.setText("Сообщение от " + update.getMessage().getChat().getUserName() + "\n" + message_text);
 
 
